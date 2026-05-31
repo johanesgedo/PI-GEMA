@@ -2,16 +2,6 @@
   <img src="assets/pigema_logo.png" alt="PI-GEMA Logo" width="500">
 </p>
 
-<h1 align="center">PI-GEMA</h1>
-
-<p align="center">
-Pencitraan dan Inversi Gelombang Seismik Terpadu
-</p>
-
-<p align="center">
-Seismic Imaging and Inversion Software Packages
-</p>
-
 
 
 # PI-GEMA

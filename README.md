@@ -204,15 +204,7 @@ The repository includes both `requirements.txt` and `environment.yml` to support
 
 ## Installation
 
-PI-GEMA supports installation from PyPI, GitHub source code, or a reproducible Conda environment
-
-### Install from PyPI
-
-Once PI-GEMA is published on PyPI, the latest stable release can be installed directly using:
-
-```
-pip install pigema
-```
+PI-GEMA supports installation from GitHub source code, Clone the Repository, or a reproducible Conda environment
 
 ### Install from GitHub
 

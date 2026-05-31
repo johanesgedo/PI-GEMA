@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pigema"
+version = "1.0.0.0"
+description = "Seismic Imaging and Inversion software packages"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+	{ name = "Johanes Gedo Sea" }
+]
+license = { text = "GNU General Public License v3 (GPLv3)" }
+
+dependencies = [
+	"numpy>=2.2.0",
+    "scipy>=1.15.0",
+    "matplotlib>=3.10.0",
+    "obspy>=1.3.0",
+    "pandas>=2.3.0",
+    "h5py>=3.15.0",
+    "PyYAML>=6.0",
+    "shapely>=2.1.0",
+    "networkx>=3.4.0",
+    "sympy>=1.14.0",
+    "tqdm>=4.67.0",
+    "segyio>=1.9.13",
+	"cupy-cuda12x>=13.5.1",
+    "torch>=2.7.1",
+    "torchaudio>=2.7.1",
+    "torchvision>=0.22.1",
+	"mpi4py>=4.1.1",
+	"jupyter>=1.1.1",
+    "notebook>=7.5.0"
+]
+
+
+keywords = [
+	"geophysics",
+	"seismic",
+	"microtremor",
+	"physics-informed neural networks",
+	"horizontal-to-vertical spectral ratio",
+	"full waveform inversion",
+	"seismology",
+	"wave propagation",
+	"inverse problem",
+	"ambient noise"
+]
+
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering :: Physics",
+	"Topic :: Scientific/Engineering :: Artificial Intelligence",
+	"Topic :: Scientific/Engineering :: Information Analysis",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/johanesgedo/PI-GEMA"
+Repository = "https://github.com/johanesgedo/PI-GEMA"
+Documentation = "https://github.com/johanesgedo/PI-GEMA#readme"
+Issues = "https://github.com/johanesgedo/PI-GEMA/issues"
+
+[project.scripts]
+pigema = "pigema.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pigema*"]
+exclude = ["tests*", "examples*", "docs*"]
+
+
+
+
+
+
+
+
+
+
+

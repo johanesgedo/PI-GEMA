@@ -211,7 +211,7 @@ PI-GEMA supports installation from GitHub source code, Clone the Repository, or 
 Install the latest development version directly from GitHub:
 
 ```
-pip install gir+https://github.com/johanesgedo/PI-GEMA.git
+pip install git+https://github.com/johanesgedo/PI-GEMA.git
 ```
 
 ### Clone the Repository

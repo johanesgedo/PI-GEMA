@@ -91,13 +91,13 @@ PI-GEMA/
 
 PI-GEMA is designed to execute the following pipeline:
 
-1. **PINNs Training**
+1. **PINNs Training** : 
    Training data are used to estimate the instrument transfer function and/or calibrate the natural-frequency correction model.
 
-2. **Transfer Calibration**
+2. **Transfer Calibration** : 
    Raw microtremor observations are corrected using the learned transfer function and written into the calibrated data directory.
 
-3. **Hybrid Processing**
+3. **Hybrid Processing** : 
    Calibrated data are passed to the CuHVSR and BFWI workflows for spectral analysis, inversion, visualization, and final interpretation.
 
 In practical terms:

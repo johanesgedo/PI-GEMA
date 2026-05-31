@@ -122,7 +122,7 @@ outputs/
 
 ## Main Modules
 
-### PINNs
+### PINNs (Physics-Informed Neural Networks)
 
 `pigema/pinns/PINN_NFC_CUDA.py`
 
@@ -137,7 +137,7 @@ The PINNs module implements a physics-informed calibration workflow for natural-
 This module is intended for smartphone-based or non-standard acquisition systems that require calibration against a physically constrained response model.
 
 
-### CuHVSR
+### CuHVSR (CUDA-based Horizontal-to-Vertical Spectral Ratio)
 
 `pigema/cuhvsr/CuHVSR.py`
 
@@ -155,7 +155,7 @@ The CuHVSR module provides the infrastructure for 3-component microtremor proces
 This module is designed to operate consistently on both CPU and GPU backends, depending on the available environment.
 
 
-### BFWI
+### BFWI (Bayesian Full Waveform Inversion)
 
 `pigema/bfwi/BFWI.py`
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/pigema_logo.png" alt="PI-GEMA Logo" width="100">
+  <img src="assets/pigema_logo.png" alt="PI-GEMA Logo" width="500">
 </p>
 
 <h1 align="center">PI-GEMA</h1>

@@ -17,6 +17,8 @@ The repository integrates three major computational modules:
 
 The software is organized as a workflow-based scientific engine. Data are processed in a reproducible sequence, beginning with training data, followed by calibration, and ending with hybrid microtremor processing and interpretation.
 
+**DOI:** https://doi.org/10.5281/zenodo.20513088
+
 ---
 
 ## Repository Structure
@@ -393,7 +395,7 @@ PI-GEMA is distributed under the terms and conditions specified in the `LICENSE`
 
 An archived release of PI-GEMA is publicly available through Zenodo and can be cited using the following DOI:
 
-**DOI:** https://doi.org/10.5281/zenodo.20513088
+**Citation:** Johanes_Gedo_Sea. (2026). johanesgedo/PI-GEMA: v1.0.0.0.0.0 (v1.0.0.0.0.0). Zenodo. https://doi.org/10.5281/zenodo.20513088
 
 If PI-GEMA contributes to published research, scientific reports, or technical documentation, users are encouraged to cite the corresponding Zenodo record in addition to any relevant scientific publications associated with the project.
 

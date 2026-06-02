@@ -17,8 +17,6 @@ The repository integrates three major computational modules:
 
 The software is organized as a workflow-based scientific engine. Data are processed in a reproducible sequence, beginning with training data, followed by calibration, and ending with hybrid microtremor processing and interpretation.
 
-**DOI:** https://doi.org/10.5281/zenodo.20513088
-
 ---
 
 ## Repository Structure

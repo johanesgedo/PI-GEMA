@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: pigema
+Version: 1.0.0.0
+Summary: Seismic Imaging and Inversion software packages
+Author: Johanes Gedo Sea
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://github.com/johanesgedo/PI-GEMA
+Project-URL: Repository, https://github.com/johanesgedo/PI-GEMA
+Project-URL: Documentation, https://github.com/johanesgedo/PI-GEMA#readme
+Project-URL: Issues, https://github.com/johanesgedo/PI-GEMA/issues
+Keywords: geophysics,seismic,microtremor,physics-informed neural networks,horizontal-to-vertical spectral ratio,full waveform inversion,seismology,wave propagation,inverse problem,ambient noise
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.0
+Requires-Dist: scipy>=1.15.0
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: cupy-cuda12x>=13.5.0
+Requires-Dist: torch>=2.7.0
+Requires-Dist: torchaudio>=2.7.0
+Requires-Dist: torchvision>=0.22.0
+Requires-Dist: obspy>=1.4.0
+Requires-Dist: pandas>=2.3.0
+Requires-Dist: h5py>=3.0.0
+Requires-Dist: mpi4py>=4.0.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: segyio>=1.9.0
+Requires-Dist: sympy>=1.13.0
+Requires-Dist: networkx>=3.0
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: notebook>=7.0.0
+Dynamic: license-file

@@ -1,0 +1,2 @@
+[console_scripts]
+pigema = pigema.cli:main

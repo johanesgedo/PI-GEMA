@@ -19,6 +19,10 @@ The software is organized as a workflow-based scientific engine. Data are proces
 
 **DOI:** https://doi.org/10.5281/zenodo.20513088
 
+Contributors:
+1. Irfan Said
+2. Amin Siddiq Summi
+
 ---
 
 ## Repository Structure

@@ -39,7 +39,6 @@ dev = [
 	"notebook>=7.5.0"
 ]
 
-
 keywords = [
 	"geophysics",
 	"seismic",

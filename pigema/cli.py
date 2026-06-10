@@ -17,17 +17,14 @@ def main():
 
     if args.command == "train-pinns":
         pinns_main()
-
     elif args.command == "calibrate":
         transfer_main()
-
     elif args.command == "hybrid":
         hybrid_main()
-
     else:
         parser.print_help()
 
-if name == "main":
+if __name__ == "__main__":
     main()
 
 

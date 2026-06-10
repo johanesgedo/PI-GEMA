@@ -33,12 +33,6 @@ dependencies = [
 	"mpi4py>=4.1.1"
 ]
 
-[project.optional-dependencies]
-dev = [
-	"jupyter>=1.1.1",
-	"notebook>=7.5.0"
-]
-
 keywords = [
 	"geophysics",
 	"seismic",

@@ -30,9 +30,13 @@ dependencies = [
     "torch>=2.7.1",
     "torchaudio>=2.7.1",
     "torchvision>=0.22.1",
-	"mpi4py>=4.1.1",
+	"mpi4py>=4.1.1"
+]
+
+[project.optional-dependencies]
+dev = [
 	"jupyter>=1.1.1",
-    "notebook>=7.5.0"
+	"notebook>=7.5.0"
 ]
 
 

@@ -111,15 +111,15 @@ def chunk_3c_data(data3c, chunk_len, max_chunks=None):
         seg = data3c[s:e, :]
         if seg.shape[0] < max(1, chunk_len // 4):
             continue
-        Z = seg[:,0].copy()
-        N = seg[:,1].copy()
-        E = seg[:,2].copy()
-        list3c.append((Z, N, E))
+        N = seg[:,0].copy()
+        E = seg[:,1].copy()
+        Z = seg[:,2].copy()
+        list3c.append((N, E, Z))
     if len(list3c) == 0:
-        Z = data3c[:,0].copy()
-        N = data3c[:,1].copy()
-        E = data3c[:,2].copy()
-        list3c = [(Z, N, E)]
+        N = data3c[:,0].copy()
+        E = data3c[:,1].copy()
+        Z = data3c[:,2].copy()
+        list3c = [(N, E, Z)]
     return list3c
 
 
@@ -169,9 +169,9 @@ def build_reference_streaming(
         if verbose:
             print(f"{os.path.basename(p)} -> {len(recs)} segments")
 
-        for (Z,N,E) in recs:
+        for (N,E,Z) in recs:
             try:
-                PSD_band_cp = ambient.Compute_PSD(Z, N, E)  # cupy array
+                PSD_band_cp = ambient.Compute_PSD(N, E, Z)  # cupy array
             except Exception as e:
                 print("Compute_PSD failed for a segment:", e)
                 continue
@@ -244,9 +244,9 @@ def run_batch_streaming_pipeline(
         print(f"[run_batch_streaming_pipeline] using representative file: {os.path.basename(rep_file)}")
 
     data3c = load_3col_timeseries_from_mixed_file(rep_file)
-    Z = data3c[:, 0]
-    N = data3c[:, 1]
-    E = data3c[:, 2]
+    N = data3c[:, 0]
+    E = data3c[:, 1]
+    Z = data3c[:, 2]
 
     pipeline = PINN_Empirical_Instrument_Response(
         fs=fs, nfft=nfft, fmin=fmin, fmax=fmax, device=device, verbose=verbose
@@ -256,7 +256,7 @@ def run_batch_streaming_pipeline(
     pipeline.S_ref_std = S_ref_std
     pipeline.pinn_model = pinn
 
-    calib = pipeline.Run_Calibration_Pipeline(Z=Z, N=N, E=E,
+    calib = pipeline.Run_Calibration_Pipeline(N=N, E=E, Z=Z,
                                               alpha=kwargs.get("alpha", 0.5),
                                               regularization=kwargs.get("regularization", 1e-6))
 

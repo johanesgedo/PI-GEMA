@@ -39,7 +39,7 @@ except Exception:
 from pigema.cuhvsr import CuHVSR
 from pigema.bfwi import BFWI
 from pathlib import Path
-# from config import CALIBRATED_OUTPUT
+from config import CALIBRATED_OUTPUT
 
 
 plt.style.use(CuHVSR.HVSRPY_MPL_STYLE)
